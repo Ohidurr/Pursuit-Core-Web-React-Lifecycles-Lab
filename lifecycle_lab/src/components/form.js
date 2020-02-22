@@ -1,10 +1,20 @@
 import React, { Component } from 'react'
-
+import ToDo from './todoList'
 class Form extends Component{
+    constructor(props){
+        super(props)
+    }
+    
     render(){
+        console.log(this.state);
+        
         return(
             <div>
-                this is a form
+            <from onSubmit='submit'>
+            <ToDo/>
+                <input type="text" placeholder="todo"></input>
+                
+            </from>
             </div>
         )
     }

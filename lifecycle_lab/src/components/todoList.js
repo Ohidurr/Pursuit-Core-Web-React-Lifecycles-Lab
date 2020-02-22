@@ -4,7 +4,7 @@ class ToDo extends Component{
     render(){
         return(
             <div>
-                this is a todo
+            
             </div>
         )
     }

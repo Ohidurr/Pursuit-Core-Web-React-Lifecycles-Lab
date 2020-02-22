@@ -3,13 +3,20 @@ import React from 'react';
 // import './App.css';
 import Form from './components/form'
 
-function App() {
+class App extends React.Component {
+  state = {showToDo: true}
+  handleRemove = () => {
+    this.setState((prevState) => ({
+      showTodo: !prevState.showToDo
+    }))
+  }
+  render(){
   return (
-    <div className="App">
-      app 
+    <div className="App"> 
       <Form/>
     </div>
-  );
+  )
+  }
 }
 
 export default App;
