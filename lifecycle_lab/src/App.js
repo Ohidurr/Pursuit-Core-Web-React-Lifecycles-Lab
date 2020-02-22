@@ -15,7 +15,9 @@ class App extends React.Component {
   return (
     <div className="App"> 
       <Form/>
-      <ToDo/>
+      <button onClick={this.handleRemove}>-</button>
+      {this.showToDo ? <ToDo/> : null}
+    
     </div>
   )
   }
